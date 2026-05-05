@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 BlissLabs
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">Inputctl</string>
+    <string name="app_summary">Manage input devices and tablet mode behavior</string>
+
+    <string name="category_manual">Manual Control</string>
+    <string name="menu_manual_blacklist_title">Blacklist devices</string>
+    <string name="menu_manual_blacklist_summary">Permanently block unwanted input devices.</string>
+
+    <string name="category_automation">Automation</string>
+    <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
+    <string name="menu_tablet_mode_summary">Automatically disable selected devices when folded (SW_TABLET_MODE).</string>
+
+    <string name="category_intro">Information</string>
+    <string name="pref_info_summary">Select the input devices you want to blacklist. Devices with a Tablet Mode switch or Power Button are protected to prevent system instability.</string>
+    <string name="category_device_list">Physical Input Devices</string>
+
+    <string name="device_status_on">Active</string>
+    <string name="device_status_off">Blacklisted</string>
+    <string name="tablet_mode_warning">Warning: Device contains a Tablet Mode switch!</string>
+    <string name="power_button_warning">Warning: Device contains a Power Button!</string>
+
+    <string name="tablet_mode_warning_title">WARNING! This device contains a Tablet Mode switch!</string>
+    <string name="tablet_mode_warning_msg">Blacklist this input can make the device unable to use the Tablet Mode functions, are you sure you want to continue ?</string>
+    <string name="power_button_warning_title">WARNING! This device contains a Power Button!</string>
+    <string name="power_button_warning_msg">Blacklist this input can cause your device <b>unable to open power menu</b>, are you sure you want to continue ?</string>
+
+    <string name="yes">OK</string>
+    <string name="no">Cancel</string>
+</resources>
