@@ -22,6 +22,8 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
+import org.blisslabs.inputctl.fragments.InputctlMainFragment;
+
 public class InputctlActivity extends FragmentActivity implements PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
 
     @Override

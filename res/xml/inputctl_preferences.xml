@@ -22,7 +22,7 @@
             android:key="menu_manual_blacklist"
             android:title="@string/menu_manual_blacklist_title"
             android:summary="@string/menu_manual_blacklist_summary"
-            app:fragment="org.blisslabs.inputctl.ManualBlacklistFragment" />
+            app:fragment="org.blisslabs.inputctl.fragments.ManualBlacklistFragment" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/category_automation">
@@ -30,7 +30,7 @@
             android:key="menu_tablet_mode"
             android:title="@string/menu_tablet_mode_title"
             android:summary="@string/menu_tablet_mode_summary"
-            app:fragment="org.blisslabs.inputctl.TabletModeFragment" />
+            app:fragment="org.blisslabs.inputctl.fragments.TabletModeFragment" />
     </PreferenceCategory>
 
 </PreferenceScreen>

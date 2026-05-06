@@ -14,10 +14,12 @@
  * limitations under the License.
  */
 
-package org.blisslabs.inputctl;
+package org.blisslabs.inputctl.fragments;
 
 import android.os.Bundle;
 import androidx.preference.PreferenceFragmentCompat;
+
+import org.blisslabs.inputctl.R;
 
 public class InputctlMainFragment extends PreferenceFragmentCompat {
     @Override

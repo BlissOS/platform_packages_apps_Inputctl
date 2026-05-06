@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.blisslabs.inputctl;
+package org.blisslabs.inputctl.fragments;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -24,6 +24,10 @@ import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreference;
 import java.util.List;
 import java.util.Set;
+
+import org.blisslabs.inputctl.R;
+import org.blisslabs.inputctl.helpers.InputDeviceManagerHelper;
+import org.blisslabs.inputctl.helpers.XmlHelper;
 
 public class ManualBlacklistFragment extends PreferenceFragmentCompat {
 

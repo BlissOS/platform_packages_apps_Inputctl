@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.blisslabs.inputctl;
+package org.blisslabs.inputctl.helpers;
 
 import android.util.Log;
 import android.util.Xml;
