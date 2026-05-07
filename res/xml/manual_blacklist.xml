@@ -29,6 +29,6 @@
     <PreferenceCategory
         android:key="category_device_list"
         android:title="@string/category_device_list">
-        </PreferenceCategory>
+    </PreferenceCategory>
 
 </PreferenceScreen>

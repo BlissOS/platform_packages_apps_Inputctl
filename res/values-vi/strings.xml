@@ -15,31 +15,37 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Inputctl</string>
-    <string name="app_summary">Quản lý thiết bị đầu vào và chế độ Tablet</string>
+     <string name="app_name">Inputctl</string>
+     <string name="app_summary">Quản lý thiết bị đầu vào và chế độ Tablet</string>
 
-    <string name="category_manual">Điều khiển thủ công</string>
-    <string name="menu_manual_blacklist_title">Blacklist thiết bị</string>
-    <string name="menu_manual_blacklist_summary">Chặn vĩnh viễn các thiết bị đầu vào không mong muốn.</string>
+     <string name="category_manual">Điều khiển thủ công</string>
+     <string name="menu_manual_blacklist_title">Blacklist thiết bị</string>
+     <string name="menu_manual_blacklist_summary">Chặn vĩnh viễn các thiết bị đầu vào không mong
+          muốn.</string>
 
-    <string name="category_automation">Tự động hóa</string>
-    <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
-    <string name="menu_tablet_mode_summary">Tự động tắt các thiết bị được chọn khi gập máy (SW_TABLET_MODE).</string>
+     <string name="category_automation">Tự động hóa</string>
+     <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
+     <string name="menu_tablet_mode_summary">Tự động tắt các thiết bị được chọn khi gập máy
+          (SW_TABLET_MODE).</string>
 
-    <string name="category_intro">Thông tin</string>
-    <string name="pref_info_summary">Chọn các thiết bị đầu vào bạn muốn chặn. Các thiết bị có cảm biến Tablet Mode hoặc Nút Nguồn được cảnh báo để tránh gây lỗi hệ thống.</string>
-    <string name="category_device_list">Danh sách thiết bị vật lý</string>
+     <string name="category_intro">Thông tin</string>
+     <string name="pref_info_summary">Chọn các thiết bị đầu vào bạn muốn chặn. Các thiết bị có cảm
+          biến Tablet Mode hoặc Nút Nguồn được cảnh báo để tránh gây lỗi hệ thống.</string>
+     <string name="category_device_list">Danh sách thiết bị vật lý</string>
 
-    <string name="device_status_on">Đang hoạt động</string>
-    <string name="device_status_off">Đã chặn (Blacklisted)</string>
-    <string name="tablet_mode_warning">Cảnh báo: Thiết bị này có cảm biến Tablet Mode!</string>
-    <string name="power_button_warning">Cảnh báo: Thiết bị này chứa Nút Nguồn!</string>
+     <string name="device_status_on">Đang hoạt động</string>
+     <string name="device_status_off">Đã chặn (Blacklisted)</string>
+     <string name="tablet_mode_warning">Cảnh báo: Thiết bị này có cảm biến Tablet Mode!</string>
+     <string name="power_button_warning">Cảnh báo: Thiết bị này chứa Nút Nguồn!</string>
 
-    <string name="tablet_mode_warning_title">CẢNH BÁO! Thiết bị này có cảm biến Tablet Mode!</string>
-    <string name="tablet_mode_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị không thể sử dụng các chức năng của Chế độ Máy tính bảng (Tablet Mode), bạn có chắc chắn muốn tiếp tục không?</string>
-    <string name="power_button_warning_title">CẢNH BÁO! Thiết bị này có nút Nguồn!</string>
-    <string name="power_button_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị của bạn <b>không thể mở menu nguồn</b>, bạn có chắc chắn muốn tiếp tục không?</string>
+     <string name="tablet_mode_warning_title">CẢNH BÁO! Thiết bị này có cảm biến Tablet Mode!</string>
+     <string name="tablet_mode_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị không thể sử
+          dụng các chức năng của Chế độ Máy tính bảng (Tablet Mode), bạn có chắc chắn muốn tiếp tục
+          không?</string>
+     <string name="power_button_warning_title">CẢNH BÁO! Thiết bị này có nút Nguồn!</string>
+     <string name="power_button_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị của bạn <b>không
+          thể mở menu nguồn</b>, bạn có chắc chắn muốn tiếp tục không?</string>
 
-    <string name="yes">Đồng ý</string>
-    <string name="no">Hủy</string>
+     <string name="yes">Đồng ý</string>
+     <string name="no">Hủy</string>
 </resources>
