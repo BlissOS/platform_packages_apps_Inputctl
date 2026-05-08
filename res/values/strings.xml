@@ -21,29 +21,37 @@
      <string name="category_manual">Manual Control</string>
      <string name="menu_manual_blacklist_title">Blacklist devices</string>
      <string name="menu_manual_blacklist_summary">Permanently block unwanted input devices.</string>
-
-     <string name="category_automation">Automation</string>
-     <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
-     <string name="menu_tablet_mode_summary">Automatically disable selected devices when folded
-          (SW_TABLET_MODE).</string>
-
-     <string name="category_intro">Information</string>
-     <string name="pref_info_summary">Select the input devices you want to blacklist. Devices with a
-          Tablet Mode switch or Power Button are protected to prevent system instability.</string>
-     <string name="category_device_list">Physical Input Devices</string>
-
+     <string name="manual_backlist_info_summary">Select the input devices you want to blacklist. Devices with a Tablet Mode switch or Power Button are protected to prevent system instability.</string>
      <string name="device_status_on">Active</string>
      <string name="device_status_off">Blacklisted</string>
      <string name="tablet_mode_warning">Warning: Device contains a Tablet Mode switch!</string>
      <string name="power_button_warning">Warning: Device contains a Power Button!</string>
 
      <string name="tablet_mode_warning_title">WARNING! This device contains a Tablet Mode switch!</string>
-     <string name="tablet_mode_warning_msg">Blacklist this input can make the device unable to use
-          the Tablet Mode functions, are you sure you want to continue ?</string>
+     <string name="tablet_mode_warning_msg">Blacklist this input can make the device unable to use the Tablet Mode functions, are you sure you want to continue ?</string>
      <string name="power_button_warning_title">WARNING! This device contains a Power Button!</string>
-     <string name="power_button_warning_msg">Blacklist this input can cause your device <b>unable to
-          open power menu</b>, are you sure you want to continue ?</string>
+     <string name="power_button_warning_msg">Blacklist this input can cause your device <b>unable to open power menu</b>, are you sure you want to continue ?</string>
 
+     <string name="category_automation">Automation</string>
+     <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
+     <string name="menu_tablet_mode_summary">Automatically disable selected devices when folded (SW_TABLET_MODE).</string>
+     <string name="tablet_mode_disable_info_summary">Select which devices (such as keyboard, touchpad) will be turned off when the system switches to Tablet mode.</string>
+     <string name="tablet_mode_disable_status">System Status</string>
+     <string name="tablet_mode_disable_status_title">Current Mode</string>
+     <string name="tablet_mode_disable_status_summary">Checking sensors...</string>
+     <string name="tablet_mode_folded">Tablet Mode (Folded)</string>
+     <string name="laptop_mode_open">Laptop Mode (Open)</string>
+     <string name="tablet_mode_input_blocked">Unable to select a device containing SW_TABLET_MODE !</string>
+     <string name="toast_tablet_mode_disabled">Tablet Mode: Auto-disabled %1$d device(s)</string>
+     <string name="toast_laptop_mode_enabled">Laptop Mode: Re-enabled %1$d device(s)</string>
+
+     <string name="category_misc">Miscellaneous</string>
+     <string name="menu_settings_title">Settings</string>
+     <string name="menu_settings_toast_tablet_mode_title">Notification when folding the device</string>
+     <string name="menu_settings_toast_tablet_mode_summary">Display a small Toast in the corner of the screen when the system automatically turns the device off/on due to folding the device.</string>
+
+     <string name="info">Information</string>
+     <string name="device_list">Physical Input Devices</string>
      <string name="yes">OK</string>
      <string name="no">Cancel</string>
 </resources>

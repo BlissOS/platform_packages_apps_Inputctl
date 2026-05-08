@@ -83,7 +83,7 @@ public class InputDeviceManagerHelper {
             return mInputManager.isInputDeviceEnabled(deviceId);
         } catch (Exception e) {
             Log.e(TAG, "Error! Can't get device state !", e);
-            return true; // Mặc định coi như đang bật nếu lỗi
+            return true;
         }
     }
 
@@ -105,6 +105,14 @@ public class InputDeviceManagerHelper {
             return hasKeys != null && hasKeys.length > 0 && hasKeys[0];
         }
         return false;
+    }
+
+    /**
+     * Check if the device is folded into Tablet mode.
+     */
+    public boolean isCurrentlyInTabletMode() {
+        int state = mInputManager.isInTabletMode();
+        return state == 1;
     }
 }
 

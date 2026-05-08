@@ -14,21 +14,14 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory
-        android:key="manual_blacklist_info"
-        android:title="@string/info">
-        <Preference
-            android:key="manual_backlist_info_summary"
-            android:summary="@string/manual_backlist_info_summary"
-            android:selectable="false" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="manual_blacklist_list"
-        android:title="@string/device_list">
+    <PreferenceCategory android:title="@string/category_automation">
+        <SwitchPreference
+            android:key="pref_tablet_mode_show_toast"
+            android:title="@string/menu_settings_toast_tablet_mode_title"
+            android:summary="@string/menu_settings_toast_tablet_mode_summary"
+            android:defaultValue="true" />
     </PreferenceCategory>
 
 </PreferenceScreen>

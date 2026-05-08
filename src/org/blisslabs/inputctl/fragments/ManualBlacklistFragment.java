@@ -39,7 +39,7 @@ public class ManualBlacklistFragment extends PreferenceFragmentCompat {
         setPreferencesFromResource(R.xml.manual_blacklist, rootKey);
 
         mHelper = new InputDeviceManagerHelper(getContext());
-        mDeviceCategory = findPreference("category_device_list");
+        mDeviceCategory = findPreference("manual_blacklist_list");
 
         refreshDeviceList();
     }

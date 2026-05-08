@@ -20,32 +20,38 @@
 
      <string name="category_manual">Điều khiển thủ công</string>
      <string name="menu_manual_blacklist_title">Blacklist thiết bị</string>
-     <string name="menu_manual_blacklist_summary">Chặn vĩnh viễn các thiết bị đầu vào không mong
-          muốn.</string>
-
-     <string name="category_automation">Tự động hóa</string>
-     <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
-     <string name="menu_tablet_mode_summary">Tự động tắt các thiết bị được chọn khi gập máy
-          (SW_TABLET_MODE).</string>
-
-     <string name="category_intro">Thông tin</string>
-     <string name="pref_info_summary">Chọn các thiết bị đầu vào bạn muốn chặn. Các thiết bị có cảm
-          biến Tablet Mode hoặc Nút Nguồn được cảnh báo để tránh gây lỗi hệ thống.</string>
-     <string name="category_device_list">Danh sách thiết bị vật lý</string>
-
+     <string name="menu_manual_blacklist_summary">Chặn vĩnh viễn các thiết bị đầu vào không mong muốn.</string>
+     <string name="manual_backlist_info_summary">Chọn các thiết bị đầu vào bạn muốn chặn. Các thiết bị có cảm biến Tablet Mode hoặc Nút Nguồn được cảnh báo để tránh gây lỗi hệ thống.</string>
      <string name="device_status_on">Đang hoạt động</string>
      <string name="device_status_off">Đã chặn (Blacklisted)</string>
      <string name="tablet_mode_warning">Cảnh báo: Thiết bị này có cảm biến Tablet Mode!</string>
      <string name="power_button_warning">Cảnh báo: Thiết bị này chứa Nút Nguồn!</string>
 
      <string name="tablet_mode_warning_title">CẢNH BÁO! Thiết bị này có cảm biến Tablet Mode!</string>
-     <string name="tablet_mode_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị không thể sử
-          dụng các chức năng của Chế độ Máy tính bảng (Tablet Mode), bạn có chắc chắn muốn tiếp tục
-          không?</string>
+     <string name="tablet_mode_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị không thể sử dụng các chức năng của Chế độ Máy tính bảng (Tablet Mode), bạn có chắc chắn muốn tiếp tục không?</string>
      <string name="power_button_warning_title">CẢNH BÁO! Thiết bị này có nút Nguồn!</string>
-     <string name="power_button_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị của bạn <b>không
-          thể mở menu nguồn</b>, bạn có chắc chắn muốn tiếp tục không?</string>
+     <string name="power_button_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị của bạn <b>không thể mở menu nguồn</b>, bạn có chắc chắn muốn tiếp tục không?</string>
 
+     <string name="category_automation">Tự động hóa</string>
+     <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
+     <string name="menu_tablet_mode_summary">Tự động tắt các thiết bị được chọn khi gập máy (SW_TABLET_MODE).</string>
+     <string name="tablet_mode_disable_info_summary">Select which devices (such as keyboard, touchpad) will be turned off when the system switches to Tablet mode.</string>
+     <string name="tablet_mode_disable_status">Trạng thái hệ thống</string>
+     <string name="tablet_mode_disable_status_title">Chế độ hiện tại</string>
+     <string name="tablet_mode_disable_status_summary">Đang kiểm tra cảm biến...</string>
+     <string name="tablet_mode_folded">Tablet Mode (Đang gập)</string>
+     <string name="laptop_mode_open">Laptop Mode (Đang mở)</string>
+     <string name="tablet_mode_input_blocked">Không thể chọn thiết bị chứa SW_TABLET_MODE !</string>
+     <string name="toast_tablet_mode_disabled">Tablet Mode: Đã tự động tắt %1$d thiết bị</string>
+     <string name="toast_laptop_mode_enabled">Laptop Mode: Đã bật lại %1$d thiết bị</string>
+
+     <string name="category_misc">Khác</string>
+     <string name="menu_settings_title">Cài đặt</string>
+     <string name="menu_settings_toast_tablet_mode_title">Thông báo khi gập máy</string>
+     <string name="menu_settings_toast_tablet_mode_summary">Hiển thị một thông báo nhỏ (Toast) dưới góc màn hình khi hệ thống tự động tắt/bật thiết bị do gập máy.</string>
+
+     <string name="info">Thông tin</string>
+     <string name="device_list">Danh sách thiết bị vật lý</string>
      <string name="yes">Đồng ý</string>
      <string name="no">Hủy</string>
 </resources>

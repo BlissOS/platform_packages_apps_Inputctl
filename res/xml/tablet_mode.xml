@@ -17,27 +17,28 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory android:title="@string/category_manual">
+    <PreferenceCategory
+        android:key="tablet_mode_disable_info"
+        android:title="@string/info">
         <Preference
-            android:key="menu_manual_blacklist"
-            android:title="@string/menu_manual_blacklist_title"
-            android:summary="@string/menu_manual_blacklist_summary"
-            app:fragment="org.blisslabs.inputctl.fragments.ManualBlacklistFragment" />
+            android:key="tablet_mode_disable_info_summary"
+            android:summary="@string/tablet_mode_disable_info_summary"
+            android:selectable="false" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/category_automation">
+    <PreferenceCategory
+        android:key="tablet_mode_disable_status"
+        android:title="@string/tablet_mode_disable_status">
         <Preference
-            android:key="menu_tablet_mode"
-            android:title="@string/menu_tablet_mode_title"
-            android:summary="@string/menu_tablet_mode_summary"
-            app:fragment="org.blisslabs.inputctl.fragments.TabletModeFragment" />
+            android:key="pref_tablet_status"
+            android:title="@string/tablet_mode_disable_status_title"
+            android:summary="@string/tablet_mode_disable_status_summary"
+            android:selectable="false" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/category_misc">
-        <Preference
-            android:key="menu_settings"
-            android:title="@string/menu_settings_title"
-            app:fragment="org.blisslabs.inputctl.fragments.SettingsFragment" />
+    <PreferenceCategory
+        android:key="tablet_mode_disable_list"
+        android:title="@string/device_list">
     </PreferenceCategory>
 
 </PreferenceScreen>
