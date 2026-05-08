@@ -58,7 +58,8 @@ public class ManualBlacklistFragment extends PreferenceFragmentCompat {
             boolean isTabletMode = mHelper.hasTabletModeSwitch(device.getId());
             boolean isPowerButton = mHelper.hasPowerButton(device.getId());
 
-            devicePref.setKey("device_" + device.getId());
+            devicePref.setKey("device_" + deviceName);
+            devicePref.setPersistent(false);
             devicePref.setTitle(deviceName);
             devicePref.setChecked(isEnabled);
             devicePref.setSummary(isEnabled ? R.string.device_status_on : R.string.device_status_off);

@@ -92,7 +92,8 @@ public class TabletModeFragment extends PreferenceFragmentCompat {
         for (InputDevice device : devices) {
             String deviceName = device.getName();
             SwitchPreference devicePref = new SwitchPreference(getPreferenceManager().getContext());
-            devicePref.setKey("auto_" + device.getId());
+            devicePref.setKey("auto_" + deviceName);
+            devicePref.setPersistent(false);
             devicePref.setTitle(deviceName);
 
             boolean isTabletSwitch = mHelper.hasTabletModeSwitch(device.getId());
