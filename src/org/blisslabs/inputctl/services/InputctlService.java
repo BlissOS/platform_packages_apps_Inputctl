@@ -31,6 +31,7 @@ import android.view.InputDevice;
 import androidx.preference.PreferenceManager;
 
 import org.blisslabs.inputctl.R;
+import org.blisslabs.inputctl.fragments.ManualBlacklistFragment;
 import org.blisslabs.inputctl.fragments.TabletModeFragment;
 import org.blisslabs.inputctl.helpers.InputDeviceManagerHelper;
 
@@ -38,7 +39,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class TabletModeService extends Service {
+public class InputctlService extends Service {
     public static final String ACTION_TABLET_MODE_CHANGED = "org.blisslabs.inputctl.action.TABLET_MODE_CHANGED";
     public static final String EXTRA_IS_TABLET_MODE = "is_tablet_mode";
 
@@ -61,12 +62,15 @@ public class TabletModeService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.d(TAG, "TabletModeService is starting...");
+        Log.d(TAG, "InputctlService is starting...");
         
         mHelper = new InputDeviceManagerHelper(this);
         mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         mHandler = new Handler(Looper.getMainLooper());
         mInputManager = getSystemService(InputManager.class);
+
+        // Trigger soft block
+        applySoftBlacklist();
 
         // Register tablet mode change
         if (mInputManager != null) {
@@ -82,6 +86,7 @@ public class TabletModeService extends Service {
         sendBroadcast(broadcastIntent);
         if (targetDevices.isEmpty()) return;
 
+        Set<String> softBlocked = mPrefs.getStringSet(ManualBlacklistFragment.PREF_SOFT_BLACKLIST, new HashSet<>());
         List<InputDevice> allDevices = mHelper.getPhysicalInputDevices();
         int affectedCount = 0;
 
@@ -89,10 +94,13 @@ public class TabletModeService extends Service {
             if (targetDevices.contains(device.getName())) {
                 if (isTabletMode) {
                     mHelper.disableDevice(device.getId());
+                    affectedCount++;
                 } else {
-                    mHelper.enableDevice(device.getId());
+                    if (!softBlocked.contains(device.getName())) {
+                        mHelper.enableDevice(device.getId());
+                        affectedCount++;
+                    }
                 }
-                affectedCount++;
             }
         }
 
@@ -103,6 +111,21 @@ public class TabletModeService extends Service {
                     getString(R.string.toast_tablet_mode_disabled, affectedCount) : 
                     getString(R.string.toast_laptop_mode_enabled, affectedCount);
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void applySoftBlacklist() {
+        Set<String> softBlocked = mPrefs.getStringSet(ManualBlacklistFragment.PREF_SOFT_BLACKLIST, new HashSet<>());
+        if (softBlocked.isEmpty()) return;
+
+        Log.d(TAG, "Applying soft block for " + softBlocked.size() + " inputs...");
+        List<InputDevice> allDevices = mHelper.getPhysicalInputDevices();
+        
+        for (InputDevice device : allDevices) {
+            if (softBlocked.contains(device.getName())) {
+                mHelper.disableDevice(device.getId());
+                Log.d(TAG, "Soft Blocked: " + device.getName());
+            }
         }
     }
 

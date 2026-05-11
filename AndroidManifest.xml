@@ -60,7 +60,7 @@
         </receiver>
 
         <service
-            android:name=".services.TabletModeService"
+            android:name=".services.InputctlService"
             android:exported="false" />
     </application>
 </manifest>

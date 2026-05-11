@@ -26,11 +26,14 @@
      <string name="device_status_off">Blacklisted</string>
      <string name="tablet_mode_warning">Warning: Device contains a Tablet Mode switch!</string>
      <string name="power_button_warning">Warning: Device contains a Power Button!</string>
+     <string name="important_sensors_warning">Warning: Device contains several critical sensors!</string>
 
      <string name="tablet_mode_warning_title">WARNING! This device contains a Tablet Mode switch!</string>
-     <string name="tablet_mode_warning_msg">Blacklist this input can make the device unable to use the Tablet Mode functions, are you sure you want to continue ?</string>
+     <string name="tablet_mode_warning_msg">Blacklist this input can make the device <b>unable to use the Tablet Mode functions</b>, are you sure you want to continue ?</string>
      <string name="power_button_warning_title">WARNING! This device contains a Power Button!</string>
      <string name="power_button_warning_msg">Blacklist this input can cause your device <b>unable to open power menu</b>, are you sure you want to continue ?</string>
+     <string name="important_sensors_warning_title">WARNING! This device contains several critical sensors!</string>
+     <string name="important_sensors_warning_msg">Blocking this input <b>may cause your device to malfunction</b>. Are you sure you want to proceed?</string>
 
      <string name="category_automation">Automation</string>
      <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
@@ -49,9 +52,22 @@
      <string name="menu_settings_title">Settings</string>
      <string name="menu_settings_toast_tablet_mode_title">Notification when folding the device</string>
      <string name="menu_settings_toast_tablet_mode_summary">Display a small Toast in the corner of the screen when the system automatically turns the device off/on due to folding the device.</string>
+     <string name="menu_settings_blacklist_mode_title">Manual blocking mode</string>
+     <string name="menu_settings_blacklist_mode_summary">Select the preferred mode to block devices</string>
+     <string name="menu_settings_blacklist_mode_switch_title">Select the preferred mode to block devices</string>
+     <string name="menu_settings_blacklist_mode_switch_msg">Switching modes will completely wipe your current block list. Are you sure you want to continue ?</string>
+     <string name="menu_settings_blacklist_mode_switch_hardmode_extra_msg"><b>WARNING</b>: Because you are removing Hard Block, you will need to RESTART your device for the blocked inputs to reappear in the system.</string>
+     <string name="soft_block_title">Soft Blocking (Immediate effect - Recommended)</string>
+     <string name="hard_block_title">Hard Blocking (Removes from system - Requires reboot)</string>
+     <string name="hard_blocked_device_list">Hard Blocked devices</string>
+     <string name="hard_blocked_device_summary">Removed from system. Click to restore.</string>
+     <string name="hard_blocked_device_restore_title">Restore device</string>
+     <string name="hard_blocked_device_restore_summary">You will need to restart your device for this input to reappear. Continue ?</string>
 
      <string name="info">Information</string>
      <string name="device_list">Physical Input Devices</string>
+     <string name="empty">Empty</string>
+     <string name="restore">Restore</string>
      <string name="yes">OK</string>
      <string name="no">Cancel</string>
 </resources>

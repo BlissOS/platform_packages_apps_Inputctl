@@ -16,6 +16,13 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory android:title="@string/category_manual">
+        <Preference
+            android:key="pref_blacklist_mode_trigger"
+            android:title="@string/menu_settings_blacklist_mode_title"
+            android:summary="@string/menu_settings_blacklist_mode_summary" />
+    </PreferenceCategory>
+
     <PreferenceCategory android:title="@string/category_automation">
         <SwitchPreference
             android:key="pref_tablet_mode_show_toast"

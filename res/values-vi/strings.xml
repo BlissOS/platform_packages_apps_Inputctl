@@ -26,11 +26,14 @@
      <string name="device_status_off">Đã chặn (Blacklisted)</string>
      <string name="tablet_mode_warning">Cảnh báo: Thiết bị này có cảm biến Tablet Mode!</string>
      <string name="power_button_warning">Cảnh báo: Thiết bị này chứa Nút Nguồn!</string>
+     <string name="important_sensors_warning">Cảnh báo: Thiết bị này chứa nhiều cảm biến quan trọng !</string>
 
      <string name="tablet_mode_warning_title">CẢNH BÁO! Thiết bị này có cảm biến Tablet Mode!</string>
-     <string name="tablet_mode_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị không thể sử dụng các chức năng của Chế độ Máy tính bảng (Tablet Mode), bạn có chắc chắn muốn tiếp tục không?</string>
+     <string name="tablet_mode_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị <b>không thể sử dụng các chức năng của Chế độ Máy tính bảng (Tablet Mode)</b>, bạn có chắc chắn muốn tiếp tục không?</string>
      <string name="power_button_warning_title">CẢNH BÁO! Thiết bị này có nút Nguồn!</string>
      <string name="power_button_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị của bạn <b>không thể mở menu nguồn</b>, bạn có chắc chắn muốn tiếp tục không?</string>
+     <string name="important_sensors_warning_title">CẢNH BÁO! Thiết bị này chứa nhiều cảm biến quan trọng!</string>
+     <string name="important_sensors_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị của bạn <b>không thể hoạt động đúng cách</b>, bạn có chắc chắn muốn tiếp tục không?</string>
 
      <string name="category_automation">Tự động hóa</string>
      <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
@@ -49,9 +52,22 @@
      <string name="menu_settings_title">Cài đặt</string>
      <string name="menu_settings_toast_tablet_mode_title">Thông báo khi gập máy</string>
      <string name="menu_settings_toast_tablet_mode_summary">Hiển thị một thông báo nhỏ (Toast) dưới góc màn hình khi hệ thống tự động tắt/bật thiết bị do gập máy.</string>
+     <string name="menu_settings_blacklist_mode_title">Chế độ chặn thủ công</string>
+     <string name="menu_settings_blacklist_mode_summary">Chọn cơ chế hoạt động để chặn thiết bị.</string>
+     <string name="menu_settings_blacklist_mode_switch_title">Chuyển đổi chế độ chặn</string>
+     <string name="menu_settings_blacklist_mode_switch_msg">Việc chuyển chế độ sẽ xóa hoàn toàn danh sách chặn hiện tại của bạn. Bạn có chắc chắn muốn tiếp tục ?</string>
+     <string name="menu_settings_blacklist_mode_switch_hardmode_extra_msg"><b>LƯU Ý</b>: Vì bạn đang bỏ Chặn Cứng, bạn sẽ cần KHỞI ĐỘNG LẠI máy để các thiết bị đã chặn xuất hiện trở lại trong hệ thống.</string>
+     <string name="soft_block_title">Chặn Mềm (Tác dụng ngay - Khuyên dùng)</string>
+     <string name="hard_block_title">Chặn Cứng (Xóa khỏi hệ thống - Cần Reboot)</string>
+     <string name="hard_blocked_device_list">Thiết bị đã Chặn Cứng</string>
+     <string name="hard_blocked_device_summary">Đã xóa khỏi hệ thống. Bấm để khôi phục.</string>
+     <string name="hard_blocked_device_restore_title">Khôi phục thiết bị</string>
+     <string name="hard_blocked_device_restore_summary">Bạn sẽ cần phải khởi động lại máy để thiết bị này xuất hiện trở lại. Tiếp tục ?</string>
 
      <string name="info">Thông tin</string>
      <string name="device_list">Danh sách thiết bị vật lý</string>
+     <string name="empty">Trống</string>
+     <string name="restore">Khôi phục</string>
      <string name="yes">Đồng ý</string>
      <string name="no">Hủy</string>
 </resources>

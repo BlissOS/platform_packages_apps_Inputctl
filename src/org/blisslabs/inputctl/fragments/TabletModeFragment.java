@@ -31,7 +31,7 @@ import androidx.preference.PreferenceManager;
 
 import org.blisslabs.inputctl.R;
 import org.blisslabs.inputctl.helpers.InputDeviceManagerHelper;
-import org.blisslabs.inputctl.services.TabletModeService;
+import org.blisslabs.inputctl.services.InputctlService;
 
 import java.util.HashSet;
 import java.util.List;
@@ -49,8 +49,8 @@ public class TabletModeFragment extends PreferenceFragmentCompat {
     private final BroadcastReceiver mTabletModeReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (TabletModeService.ACTION_TABLET_MODE_CHANGED.equals(intent.getAction())) {
-                boolean isTabletMode = intent.getBooleanExtra(TabletModeService.EXTRA_IS_TABLET_MODE, false);
+            if (InputctlService.ACTION_TABLET_MODE_CHANGED.equals(intent.getAction())) {
+                boolean isTabletMode = intent.getBooleanExtra(InputctlService.EXTRA_IS_TABLET_MODE, false);
                 
                 // Update immediately
                 Preference statusPref = findPreference("pref_tablet_status");
@@ -77,7 +77,7 @@ public class TabletModeFragment extends PreferenceFragmentCompat {
     public void onResume() {
         super.onResume();
         
-        IntentFilter filter = new IntentFilter(TabletModeService.ACTION_TABLET_MODE_CHANGED);
+        IntentFilter filter = new IntentFilter(InputctlService.ACTION_TABLET_MODE_CHANGED);
         getContext().registerReceiver(mTabletModeReceiver, filter);
         updateStatusUI(); 
     }

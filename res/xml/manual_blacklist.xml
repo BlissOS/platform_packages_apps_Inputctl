@@ -31,4 +31,9 @@
         android:title="@string/device_list">
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="manual_blacklist_hard_blocked_list"
+        android:title="@string/hard_blocked_device_list">
+    </PreferenceCategory>
+
 </PreferenceScreen>

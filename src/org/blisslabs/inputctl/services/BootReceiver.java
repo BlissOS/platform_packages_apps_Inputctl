@@ -26,7 +26,7 @@ public class BootReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
             Log.d("Inputctl_Boot", "Boot completed, starting service...");
-            Intent serviceIntent = new Intent(context, TabletModeService.class);
+            Intent serviceIntent = new Intent(context, InputctlService.class);
             context.startService(serviceIntent);
         }
     }
