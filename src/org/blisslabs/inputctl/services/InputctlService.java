@@ -77,6 +77,11 @@ public class InputctlService extends Service {
             mInputManager.registerOnTabletModeChangedListener(mTabletModeListener, mHandler);
             Log.d(TAG, "Successfully registered OnTabletModeChangedListener!");
         }
+
+        // Initial tablet mode set at boot
+        boolean currentTabletMode = mHelper.isCurrentlyInTabletMode();
+        Log.d(TAG, "Initial Tablet Mode state at boot: " + currentTabletMode);
+        handleTabletModeChange(currentTabletMode);
     }
 
     private void handleTabletModeChange(boolean isTabletMode) {
