@@ -51,7 +51,7 @@
      <string name="category_misc">Miscellaneous</string>
      <string name="menu_settings_title">Settings</string>
      <string name="menu_settings_toast_tablet_mode_title">Notification when folding the device</string>
-     <string name="menu_settings_toast_tablet_mode_summary">Display a small Toast in the corner of the screen when the system automatically turns the device off/on due to folding the device.</string>
+     <string name="menu_settings_toast_tablet_mode_summary">Display a small Toast in the corner of the screen when the system automatically turns the input off/on due to folding the device.</string>
      <string name="menu_settings_blacklist_mode_title">Manual blocking mode</string>
      <string name="menu_settings_blacklist_mode_summary">Select the preferred mode to block devices</string>
      <string name="menu_settings_blacklist_mode_switch_title">Select the preferred mode to block devices</string>
