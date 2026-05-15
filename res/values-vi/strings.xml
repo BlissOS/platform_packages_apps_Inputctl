@@ -34,6 +34,8 @@
      <string name="power_button_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị của bạn <b>không thể mở menu nguồn</b>, bạn có chắc chắn muốn tiếp tục không?</string>
      <string name="important_sensors_warning_title">CẢNH BÁO! Thiết bị này chứa nhiều cảm biến quan trọng!</string>
      <string name="important_sensors_warning_msg">Việc chặn đầu vào này có thể khiến thiết bị của bạn <b>không thể hoạt động đúng cách</b>, bạn có chắc chắn muốn tiếp tục không?</string>
+     <string name="generic_blacklist_warning_title">Xác nhận chặn thiết bị</string>
+     <string name="generic_blacklist_warning_msg">Bạn có chắc chắn muốn chặn thiết bị "%1$s" không ?</string>
 
      <string name="category_automation">Tự động hóa</string>
      <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
@@ -63,6 +65,10 @@
      <string name="hard_blocked_device_summary">Đã xóa khỏi hệ thống. Bấm để khôi phục.</string>
      <string name="hard_blocked_device_restore_title">Khôi phục thiết bị</string>
      <string name="hard_blocked_device_restore_summary">Bạn sẽ cần phải khởi động lại máy để thiết bị này xuất hiện trở lại. Tiếp tục ?</string>
+     <string name="menu_settings_blacklist_safeguard_title">Hỏi trước khi chặn</string>
+     <string name="menu_settings_blacklist_safeguard_summary">Hiển thị hộp thoại xác nhận mỗi khi bạn muốn chặn một thiết bị để tránh bấm nhầm.</string>
+     <string name="safeguard_disable_warning_title">Tắt lớp bảo vệ ?</string>
+     <string name="safeguard_disable_warning_msg">Nếu tắt tính năng này, các thiết bị sẽ bị chặn NGAY LẬP TỨC khi bạn gạt công tắc. Điều này có thể khiến bạn vô tình tự khóa mình khỏi các thiết bị đang sử dụng. Bạn có chắc chắn muốn tắt ?</string>
 
      <string name="info">Thông tin</string>
      <string name="device_list">Danh sách thiết bị vật lý</string>

@@ -34,6 +34,8 @@
      <string name="power_button_warning_msg">Blacklist this input can cause your device <b>unable to open power menu</b>, are you sure you want to continue ?</string>
      <string name="important_sensors_warning_title">WARNING! This device contains several critical sensors!</string>
      <string name="important_sensors_warning_msg">Blocking this input <b>may cause your device to malfunction</b>. Are you sure you want to proceed?</string>
+     <string name="generic_blacklist_warning_title">Confirm device blocking</string>
+     <string name="generic_blacklist_warning_msg">Are you sure you want to block device "%1$s" ?</string>
 
      <string name="category_automation">Automation</string>
      <string name="menu_tablet_mode_title">Tablet Mode Auto-Disable</string>
@@ -63,6 +65,10 @@
      <string name="hard_blocked_device_summary">Removed from system. Click to restore.</string>
      <string name="hard_blocked_device_restore_title">Restore device</string>
      <string name="hard_blocked_device_restore_summary">You will need to restart your device for this input to reappear. Continue ?</string>
+     <string name="menu_settings_blacklist_safeguard_title">Ask before blocking</string>
+     <string name="menu_settings_blacklist_safeguard_summary">Display a confirmation dialog each time you want to block a input to avoid accidental clicks.</string>
+     <string name="safeguard_disable_warning_title">Turn off the protection ?</string>
+     <string name="safeguard_disable_warning_msg">If you turn this off, inputs will be blocked IMMEDIATELY when you flip the switch. This could cause you to accidentally lock yourself out of control. Are you sure you want to turn it off?</string>
 
      <string name="info">Information</string>
      <string name="device_list">Physical Input Devices</string>

@@ -20,6 +20,7 @@ import android.app.AlertDialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import androidx.preference.SwitchPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
@@ -51,6 +52,27 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 
             modePref.setOnPreferenceClickListener(preference -> {
                 showModeSelectionDialog(modePref);
+                return true;
+            });
+        }
+
+        SwitchPreference safeguardPref = findPreference("pref_blacklist_safeguard");
+        if (safeguardPref != null) {
+            safeguardPref.setOnPreferenceChangeListener((preference, newValue) -> {
+                boolean turnOn = (Boolean) newValue;
+
+                if (!turnOn) {
+                    new AlertDialog.Builder(getContext())
+                            .setTitle(R.string.safeguard_disable_warning_title)
+                            .setMessage(R.string.safeguard_disable_warning_msg)
+                            .setPositiveButton(R.string.yes, (dialog, which) -> {
+                                ((SwitchPreference) preference).setChecked(false);
+                            })
+                            .setNegativeButton(R.string.no, null)
+                            .show();
+                    return false;
+                }
+                
                 return true;
             });
         }

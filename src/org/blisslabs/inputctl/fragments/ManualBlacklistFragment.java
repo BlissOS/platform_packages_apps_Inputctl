@@ -104,6 +104,8 @@ public class ManualBlacklistFragment extends PreferenceFragmentCompat {
                 boolean turnOn = (Boolean) newValue;
 
                 // input warn
+                boolean isSafeguardEnabled = mPrefs.getBoolean("pref_blacklist_safeguard", true);
+
                 if (!turnOn && (isTabletMode || isPowerButton)) {
                     String dialogTitle = "";
                     String dialogMsg = "";
@@ -131,6 +133,21 @@ public class ManualBlacklistFragment extends PreferenceFragmentCompat {
                         .setNegativeButton(R.string.no, null)
                         .show();
 
+                    return false;
+                }
+
+                else if (!turnOn && isSafeguardEnabled) {
+                    new AlertDialog.Builder(getContext())
+                        .setTitle(R.string.generic_blacklist_warning_title)
+                        .setMessage(getString(R.string.generic_blacklist_warning_msg, deviceName))
+                        .setPositiveButton(R.string.yes, (dialog, which) -> {
+                            applyBlock(device, deviceName, isHardMode, hardBlacklist, softBlacklist);
+                            ((SwitchPreference) preference).setChecked(false);
+                            preference.setSummary(R.string.device_status_off);
+                        })
+                        .setNegativeButton(R.string.no, null)
+                        .show();
+                        
                     return false;
                 }
 

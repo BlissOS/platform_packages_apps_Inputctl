@@ -21,6 +21,11 @@
             android:key="pref_blacklist_mode_trigger"
             android:title="@string/menu_settings_blacklist_mode_title"
             android:summary="@string/menu_settings_blacklist_mode_summary" />
+        <SwitchPreference
+            android:key="pref_blacklist_safeguard"
+            android:title="@string/menu_settings_blacklist_safeguard_title"
+            android:summary="@string/menu_settings_blacklist_safeguard_summary"
+            android:defaultValue="true" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/category_automation">
