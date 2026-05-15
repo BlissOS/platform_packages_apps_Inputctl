@@ -70,6 +70,10 @@
      <string name="safeguard_disable_warning_title">Tắt lớp bảo vệ ?</string>
      <string name="safeguard_disable_warning_msg">Nếu tắt tính năng này, các thiết bị sẽ bị chặn NGAY LẬP TỨC khi bạn gạt công tắc. Điều này có thể khiến bạn vô tình tự khóa mình khỏi các thiết bị đang sử dụng. Bạn có chắc chắn muốn tắt ?</string>
 
+     <string name="category_about">Giới thiệu</string>
+     <string name="about_inputctl_what">Inputctl là công cụ quản lý phần cứng đầu vào chuyên sâu.</string>
+     <string name="about_inputctl_who">Đây là một dự án nguồn mở thuộc tổ chức BlissLabs (https://blisslabs.org), được phát hành và bảo vệ dưới giấy phép Apache License 2.0.</string>
+
      <string name="info">Thông tin</string>
      <string name="device_list">Danh sách thiết bị vật lý</string>
      <string name="empty">Trống</string>

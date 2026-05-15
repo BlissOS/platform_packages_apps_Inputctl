@@ -70,6 +70,11 @@
      <string name="safeguard_disable_warning_title">Turn off the protection ?</string>
      <string name="safeguard_disable_warning_msg">If you turn this off, inputs will be blocked IMMEDIATELY when you flip the switch. This could cause you to accidentally lock yourself out of control. Are you sure you want to turn it off?</string>
 
+     <string name="category_about">About</string>
+     <string name="about_inputctl_what">Inputctl is a sophisticated input hardware management tool.</string>
+     <string name="about_inputctl_who">This is an open-source project by BlissLabs (https://blisslabs.org), released and protected under the Apache License 2.0.</string>
+     <string name="about_inputctl_copyright">Copyright © 2026 BlissLabs. All rights reserved.</string>
+
      <string name="info">Information</string>
      <string name="device_list">Physical Input Devices</string>
      <string name="empty">Empty</string>

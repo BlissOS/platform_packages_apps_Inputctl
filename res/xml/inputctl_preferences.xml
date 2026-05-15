@@ -40,4 +40,9 @@
             app:fragment="org.blisslabs.inputctl.fragments.SettingsFragment" />
     </PreferenceCategory>
 
+    <PreferenceCategory android:title="@string/category_about">
+        <org.blisslabs.inputctl.preferences.AboutPreference
+            android:key="about_inputctl_custom" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
