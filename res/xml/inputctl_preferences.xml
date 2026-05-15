@@ -22,6 +22,7 @@
             android:key="menu_manual_blacklist"
             android:title="@string/menu_manual_blacklist_title"
             android:summary="@string/menu_manual_blacklist_summary"
+            android:icon="@drawable/ic_block"
             app:fragment="org.blisslabs.inputctl.fragments.ManualBlacklistFragment" />
     </PreferenceCategory>
 
@@ -30,6 +31,7 @@
             android:key="menu_tablet_mode"
             android:title="@string/menu_tablet_mode_title"
             android:summary="@string/menu_tablet_mode_summary"
+            android:icon="@drawable/ic_devices_fold_2"
             app:fragment="org.blisslabs.inputctl.fragments.TabletModeFragment" />
     </PreferenceCategory>
 
@@ -37,6 +39,7 @@
         <Preference
             android:key="menu_settings"
             android:title="@string/menu_settings_title"
+            android:icon="@drawable/ic_tune"
             app:fragment="org.blisslabs.inputctl.fragments.SettingsFragment" />
     </PreferenceCategory>
 
