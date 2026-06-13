@@ -24,6 +24,13 @@
             android:summary="@string/menu_manual_blacklist_summary"
             android:icon="@drawable/ic_block"
             app:fragment="org.blisslabs.inputctl.fragments.ManualBlacklistFragment" />
+            
+        <Preference
+            android:key="menu_kbd_sensor"
+            android:title="@string/menu_kbd_sensor_title"
+            android:summary="@string/menu_kbd_sensor_summary"
+            android:icon="@drawable/ic_mobile_rotate"
+            app:fragment="org.blisslabs.inputctl.fragments.KbdSensorConfigFragment" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/category_automation">

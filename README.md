@@ -9,6 +9,8 @@ A sophisticated input hardware management tool for Android. Made for [BlissOS](h
   - Hard Blocking: basically create an xml that is equivalent to `excluded-input-devices.xml` file. This method provide a more robust blocking. However you'll have to reboot the device whenever you're done selecting inputs.
 - Automatically disable inputs using Tablet Mode Switch:
   - Convertible 2-in-1 laptops with touchscreens usually provide a sensor. On Linux this sensor provides an input event called `SW_TABLET_MODE` that can be used to detect whenever the laptop is being flipped or not to automatically disable some components such as the internal keyboard, touchpad or trackpoint. We brought this same mechanism to Inputctl, but inputs have to choose manually.
+- Kbd Sensor Configuration:
+  - Map custom keyboard shortcuts (up to 3 keys combined) to control the virtual accelerometer sensor orientations (0°, 90°, 180°, 270°). Requires the `sensors.kbd` HAL.
 - Show a toast whenever the device is flipped to indicate that X inputs has been disabled.
 - You can find the app under Settings => System => Inputctl.
 
@@ -23,6 +25,8 @@ PRODUCT_PACKAGES += \
 - You'll need to apply these patches to `frameworks/base` for some features to work:
   - For Hard Blocking: [InputManagerService: read a custom excluded-input-devices.xml file at /data/system](https://github.com/BlissRoms-x86/platform_frameworks_base/commit/98d124b48afc75e615b7907b7a68f02c557880f3)
   - Allow Inputctl to check which input has a Tablet Mode Switch : [core: Expose method to get switch state from inputs](https://github.com/BlissRoms-x86/platform_frameworks_base/commit/70f37bd3c2335e78a5825db2998ff30c38b593c3)
+
+- For Kbd Sensor Configuration, you'll need to use the modified sensors.kbd HAL under [this repo](https://github.com/android-generic/platform_hardware_libsensors) & set `ro.hardware.sensor=kbd` to make the HAL work.
 
 ## License
 
