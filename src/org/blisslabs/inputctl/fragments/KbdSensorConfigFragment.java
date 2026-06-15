@@ -138,6 +138,14 @@ public class KbdSensorConfigFragment extends PreferenceFragmentCompat {
             dialog.setListener(new KeyCaptureDialogFragment.KeyCaptureListener() {
                 @Override
                 public void onKeyCaptured(KbdActionConfig newAction) {
+                    if (isDuplicateAction(newAction, config, rotId)) {
+                        new AlertDialog.Builder(getContext())
+                            .setTitle(R.string.kbd_sensor_config_capture_title)
+                            .setMessage(R.string.kbd_sensor_config_duplicate_shortcut)
+                            .setPositiveButton(R.string.yes, null)
+                            .show();
+                        return;
+                    }
                     action.key = newAction.key;
                     action.mod1 = newAction.mod1;
                     action.mod2 = newAction.mod2;
@@ -246,5 +254,33 @@ public class KbdSensorConfigFragment extends PreferenceFragmentCompat {
             case 125: return "Super";
             default: return "SC" + scanCode;
         }
+    }
+
+    private boolean isDuplicateAction(KbdActionConfig newAction, KbdDeviceConfig currentConfig, String currentRotId) {
+        if (newAction.key == -1) return false;
+
+        for (KbdDeviceConfig config : mConfigs) {
+            if (isSameAction(newAction, config.rot0) && !(config == currentConfig && "rot0".equals(currentRotId))) return true;
+            if (isSameAction(newAction, config.rot90) && !(config == currentConfig && "rot90".equals(currentRotId))) return true;
+            if (isSameAction(newAction, config.rot180) && !(config == currentConfig && "rot180".equals(currentRotId))) return true;
+            if (isSameAction(newAction, config.rot270) && !(config == currentConfig && "rot270".equals(currentRotId))) return true;
+        }
+        return false;
+    }
+
+    private boolean isSameAction(KbdActionConfig a1, KbdActionConfig a2) {
+        if (a1.key == -1 || a2.key == -1) return false;
+        if (a1.key != a2.key) return false;
+
+        List<Integer> mods1 = new ArrayList<>();
+        if (a1.mod1 != -1) mods1.add(a1.mod1);
+        if (a1.mod2 != -1) mods1.add(a1.mod2);
+
+        List<Integer> mods2 = new ArrayList<>();
+        if (a2.mod1 != -1) mods2.add(a2.mod1);
+        if (a2.mod2 != -1) mods2.add(a2.mod2);
+
+        if (mods1.size() != mods2.size()) return false;
+        return mods1.containsAll(mods2) && mods2.containsAll(mods1);
     }
 }

@@ -42,6 +42,7 @@
      <string name="kbd_sensor_config_tap_to_remove">Nhấn để xóa thiết bị này</string>
      <string name="kbd_sensor_config_remove_title">Xóa thiết bị</string>
      <string name="kbd_sensor_config_remove_msg">Bạn có chắc chắn muốn xóa \"%1$s\" khỏi cấu hình cảm biến bàn phím không?</string>
+     <string name="kbd_sensor_config_duplicate_shortcut">Phím tắt này đã được gán cho một góc xoay khác!</string>
      <string name="manual_backlist_info_summary">Chọn các thiết bị đầu vào bạn muốn chặn. Các thiết bị có cảm biến Tablet Mode hoặc Nút Nguồn được cảnh báo để tránh gây lỗi hệ thống.</string>
      <string name="device_status_on">Đang hoạt động</string>
      <string name="device_status_off">Đã chặn (Blacklisted)</string>
